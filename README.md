@@ -1,11 +1,10 @@
-[Online demo](https://mockapi.netlify.app/)
-
 ## REQUIRED FEATURES  
   A user should be able to pick any date range, a certain project, or all of them,  a certain gateway or all of them.
   All the information needed for the solution is provided by the Mock API.
 
 ## Public API
-  ### API base path: ```http://178.63.13.157:8090/mock-api/api/```
+  ### API base path: 
+  [http://178.63.13.157:8090/mock-api/api/](http://178.63.13.157:8090/mock-api/api/)
 
   ### GET /users
   Returns all the users in the system
