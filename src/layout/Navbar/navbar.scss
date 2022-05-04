@@ -1,0 +1,45 @@
+@import 'assets/sass/settings.scss';
+
+header {
+  background-color: $color-bg;
+  border-bottom: 2px solid $color-gray;
+  height: $navbar-height;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  a {
+    padding-left: 1.5rem;
+
+    img {
+      height: 39px;
+    }
+  }
+
+  .user {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5.5rem;
+
+    .user-icon {
+      align-items: center;
+      background-color: $color-yellow;
+      border-radius: 5px;
+      display: flex;
+      color: white;
+      height: 43px;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 700;
+      width: 43px;
+    }
+
+    .user-name {
+      color: $color-primary;
+      font-weight: 700;
+      margin-left: 11px;
+    }
+  }
+}

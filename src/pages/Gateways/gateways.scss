@@ -1,0 +1,77 @@
+@import 'assets/sass/settings.scss';
+
+.projects-container,
+.total-amount {
+  background-color: $color-container-bg;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 1rem;
+}
+
+.total-amount {
+  font-weight: 700;
+}
+
+.date-picker {
+  height: 32px;
+
+  label {
+    background-color: white;
+    line-height: 1;
+    padding: 0 2px;
+    top: -1px;
+  }
+
+  input {
+    background-color: $color-secondary;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 7px 14px 4px;
+  }
+
+  fieldset {
+    border: none;
+  }
+}
+
+.select-input,
+.date-picker {
+  margin-right: 0.65rem !important;
+}
+
+button#generate-report {
+  height: 2rem;
+  min-width: 110px;
+  text-transform: none !important;
+  white-space: nowrap;
+}
+
+.no-reports {
+  text-align: center;
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .select-input,
+  .date-picker,
+  #generate-report {
+    margin-top: 10px !important;
+  }
+
+  .select-input:nth-child(2n+1),
+  .date-picker:nth-child(2n+1) {
+    // margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .select-input,
+  .date-picker,
+  #generate-report {
+    width: 48%;
+    margin: 5px auto !important;
+  }
+}

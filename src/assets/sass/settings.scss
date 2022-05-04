@@ -1,0 +1,47 @@
+/* colors */
+
+$color-primary: #005B96;
+$color-secondary: #1BC5BD;
+$color-error: rgb(255, 0, 64);
+$color-text: #011F4B;
+$color-subtitle: #7E8299;
+$color-yellow: #F6CA65;
+$color-gray: #F3F6F9;
+$color-container-bg: #F1FAFE;
+$color-bg: white;
+
+/* font styles */
+
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xlg: 24px;
+$font-size-xxlg: 28px;
+$font-family: "Roboto",
+sans-serif;
+
+/* common styles */
+
+$navbar-height: 80px;
+$logo-height: 38px;
+$line-height: 1.5;
+
+/* mixin */
+
+@mixin setTransition($transitions...) {
+  -webkit-transition: $transitions;
+  -moz-transition: $transitions;
+  -o-transition: $transitions;
+  -ms-transition: $transitions;
+  transition: $transitions;
+}
+
+@mixin boxShadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

@@ -1,0 +1,55 @@
+@import 'assets/sass/settings.scss';
+
+.date-picker {
+  height: 32px;
+
+  label {
+    background-color: white;
+    line-height: 1;
+    padding: 0 2px;
+    top: -1px;
+  }
+
+  input {
+    background-color: $color-secondary;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 7px 14px 4px;
+  }
+
+  fieldset {
+    border: none;
+  }
+}
+
+.select-input,
+.date-picker {
+  margin-right: 0.65rem !important;
+}
+
+button#generate-report {
+  height: 2rem;
+  min-width: 110px;
+  text-transform: none !important;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+
+  .select-input,
+  .date-picker,
+  #generate-report {
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .select-input,
+  .date-picker,
+  #generate-report {
+    width: 48%;
+    margin: 7px auto !important;
+  }
+}

@@ -1,0 +1,12 @@
+@import 'assets/sass/settings.scss';
+
+.select-input {
+  color: white;
+  background-color: $color-secondary;
+  border-radius: 5px;
+  font-size: .875rem;
+  font-weight: 400;
+  height: 2rem;
+  padding-right: 2.2rem;
+  width: auto;
+}

@@ -1,0 +1,40 @@
+@import 'assets/sass/settings.scss';
+
+.projects-container,
+.info-container {
+  background-color: $color-container-bg;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 1rem;
+}
+
+.info-container {
+  height: 53px;
+}
+
+.total-amount {
+  font-weight: 700;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-around;
+
+  .chart-info {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+
+    &>div {
+      border-radius: 5px;
+      height: 15px;
+      margin-right: 12px;
+      width: 15px;
+    }
+  }
+}
+
+.no-reports {
+  text-align: center;
+  margin-top: 130px;
+}
