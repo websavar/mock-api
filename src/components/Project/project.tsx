@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { GeneratedReportsInterface } from 'interfaces';
 import { Currency, ProjectTableHeader } from 'constants/index';
-import { getProjectTotalAmount, numberWithCommas } from 'helper/utils';
+import { getProjectTotalAmount, numberWithCommas, sortByDate } from 'helper/utils';
 
 import { styled } from '@mui/material/styles';
 import {
@@ -35,6 +35,8 @@ const Project: React.FC<{ project: GeneratedReportsInterface }> = ({
   const handleClick = () => setOpenCollapse(!openCollapse);
 
   const showChart: boolean = useLocation().pathname === '/chart' ? true : false;
+
+  sortByDate(project);
 
   return (
     <>

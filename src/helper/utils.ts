@@ -60,6 +60,22 @@ export const sortByName = (array: GeneratedReportsInterface[]) => {
   return array.sort((a, b) => a.name.localeCompare(b.name));
 };
 
+export const formatedDate = (date: string) => {
+  return date.split('-').reverse().join('.')
+}
+
+export const originalDate = (date: string) => {
+  return date.split('.').reverse().join('-')
+}
+
+export const sortByDate = (report: GeneratedReportsInterface) => {
+  return report.data.sort(function (a, b) {
+    var aDate: Date = new Date(originalDate(a.date));
+    var bDate: Date = new Date(originalDate(b.date));
+    return Number(aDate) - Number(bDate);
+  });
+}
+
 export const groupById = (
   projects: ProjectsInterface[],
   gateways: GatewaysInterface[],
@@ -70,7 +86,7 @@ export const groupById = (
     const name: string = getProjectName(projects, report['projectId']);
     let index: number | undefined;
     const formattedReport: GeneratedReportsInterface['data'][0] = {
-      date: report.created,
+      date: formatedDate(report.created),
       gateway: getGatewayName(gateways, report.gatewayId),
       transactionId: report.paymentId,
       amount: report.amount
